@@ -1,0 +1,92 @@
+/* Container for the product list */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-evenly;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+/* Individual card styling */
+.product-list .card {
+  width: 250px; /* Adjust width of each card */
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+/* Card hover effect */
+.product-list .card:hover {
+  transform: translateY(-10px); /* Lift the card on hover */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Card image styling */
+.product-list .card img {
+  width: 100%;
+  height: 200px; /* Fixed height for images */
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+  align-self: center;
+}
+
+/* Card content styling */
+.product-list .card .card-content {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Title styling */
+.product-list .card .card-content h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 10px 0;
+  font-weight: 600;
+}
+
+/* Description styling */
+.product-list .card .card-content p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 10px;
+  text-align: justify;
+  height: 60px; 
+}
+
+/* Button styles */
+.product-list .card .card-actions {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.product-list .card .card-actions button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product-list .card .card-actions button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .product-list {
+    justify-content: center;
+  }
+
+  .product-list .card {
+    width: 100%;
+    max-width: 300px;
+  }
+}

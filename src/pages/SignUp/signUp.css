@@ -1,0 +1,90 @@
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Preventing scroll on body but allowing for overflow */
+html, body {
+  height: 100%;
+}
+
+/* Signup Page Styles */
+.signup-container {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh; /* Ensures the container always takes at least the full height of the screen */
+  background-color: #f7f7f7;
+  padding: 2rem;
+}
+
+.signup-form {
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px; /* Slightly wider form for better readability */
+  box-sizing: border-box;
+  overflow: auto; /* Ensures the form can scroll if needed */
+  height: fit-content;
+}
+
+.signup-form h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.signup-form input {
+  width: 100%;
+  padding: 1rem;
+  margin: 10px 0px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1.1rem;
+}
+
+.signup-form input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.signup-form button {
+  width: 100%;
+  padding: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.signup-form button:hover {
+  background-color: #0056b3;
+}
+
+.signup-form p {
+  text-align: center;
+  color: red;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.signup-form a {
+  display: block;
+  text-align: center;
+  margin-top: 1.5rem;
+  color: #007bff;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.signup-form a:hover {
+  text-decoration: underline;
+}

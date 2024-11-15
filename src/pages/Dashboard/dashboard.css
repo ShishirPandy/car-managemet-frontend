@@ -1,0 +1,22 @@
+/* src/pages/Dashboard.css */
+.dashboard {
+    padding: 20px;
+    /* src/pages/dashboard.css */
+.dashboard {
+  max-height: 80vh; /* Adjust based on your needs */
+  overflow-y: auto;  /* Enables vertical scrolling */
+  padding: 20px;
+}
+
+  }
+  
+  .dashboard h1 {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  
+  .dashboard .search-bar {
+    max-width: 600px;
+    margin: 0 auto 16px;
+  }
+  

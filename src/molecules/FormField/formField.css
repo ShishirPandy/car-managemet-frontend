@@ -1,0 +1,11 @@
+/* src/components/molecules/FormField.css */
+.form-field {
+    margin-bottom: 16px;
+  }
+  
+  .form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  

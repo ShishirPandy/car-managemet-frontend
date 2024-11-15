@@ -1,0 +1,21 @@
+.car-list-container {
+    padding: 10px;
+    overflow-y: auto;
+  }
+  
+  .car-list {
+    margin-top: 20px;
+  }
+  .car-list img {
+    max-width: 200px; /* Adjust as needed */
+    max-height: 150px; /* Adjust as needed */
+    object-fit: cover; /* Ensures the image is cropped to fit within the dimensions */
+  }
+  .searchbar{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  

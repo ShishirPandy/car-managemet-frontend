@@ -1,0 +1,91 @@
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Preventing scroll on body but allowing for overflow */
+html, body {
+  height: 100%;
+  overflow: auto; /* Allows scroll if content overflows */
+}
+
+/* Login Page Styles */
+.login-container {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh; /* Ensures the container always takes at least the full height of the screen */
+  background-color: #f7f7f7;
+  padding: 10px 20px;
+}
+
+.login-form {
+  background-color: white;
+  padding: 3rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px; /* Slightly wider form for better readability */
+  box-sizing: border-box;
+  overflow: auto; /* Ensures the form can scroll if needed */
+  height: fit-content;
+}
+
+.login-form h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 1rem;
+  margin: 10px 0;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1.1rem;
+}
+
+.login-form input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-form button:hover {
+  background-color: #0056b3;
+}
+
+.login-form .error-message {
+  text-align: center;
+  color: red;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.login-form a {
+  display: block;
+  text-align: center;
+  margin-top: 1.5rem;
+  color: #007bff;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.login-form a:hover {
+  text-decoration: underline;
+}

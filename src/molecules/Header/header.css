@@ -1,0 +1,118 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px 10px 0px 0px;
+    background-color: transparent;
+  }
+  
+  .header:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+  }
+  
+  .header-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px; /* Added gap between logo image and text */
+  }
+  
+  .header-image {
+    width: 45px; /* Slightly larger image */
+    height: 45px;
+    opacity: 0.6; /* Subtle opacity for a cleaner look */
+    border-radius: 50%;
+  }
+  
+  .header-image:hover {
+    opacity: 1; /* Full opacity on hover */
+    transform: scale(1.1); /* Slightly enlarge the image on hover */
+  }
+  
+  .logo {
+    font-size: 1.5rem; /* Increased font size for emphasis */
+    font-weight: 600; /* Slightly lighter font weight */
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .logo:hover {
+    color: #007bff; 
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 1.8rem;
+    align-items: center;
+  }
+  
+  .nav-links a {
+    color: #555;
+    text-decoration: none;
+    font-size: 1.1rem; /* Slightly larger font size */
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #007bff; 
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .welcome-message {
+    color: #555;
+    font-size: 1.1rem; /* Slightly larger font for better readability */
+  }
+  
+  .logout-button {
+    padding: 0.6rem 1.2rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+  }
+  
+  .logout-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .login-link {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .login-link:hover {
+    text-decoration: underline;
+    color: #0056b3; /* Darker blue when hovered */
+  }
+  
